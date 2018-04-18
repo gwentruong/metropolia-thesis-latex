@@ -120,7 +120,7 @@
 
 %SOURCE CODE
 \newenvironment{code}{\captionsetup{type=listing}}{}
-\IfLanguageName {finnish} {\SetupFloatingEnvironment{listing}{name=Listaus}} {}
+\IfLanguageName {finnish} {\SetupFloatingEnvironment{listing}{name=Listing}} {}
 %\counterwithout{lstlisting}{chapter}
 %moved after begin document, otherwise does not compile
 
@@ -130,7 +130,7 @@
 
 %TOC
 %change toc title
-\IfLanguageName {finnish} {\addto{\captionsfinnish}{\renewcommand*{\contentsname}{Sisällys}}} {}
+\IfLanguageName {finnish} {\addto{\captionsfinnish}{\renewcommand*{\contentsname}{Contents}}} {}
 %remove dots
 \renewcommand*{\cftdotsep}{\cftnodots}
 %chapter title and page number not in bold
@@ -153,11 +153,11 @@
 \renewcommand{\cftsubsectionaftersnumb}{\vspace*{-1pt}}
 %appendix in toc with "Appendix " + num
 \IfLanguageName {finnish} {
-  \renewcommand*{\cftappendixname}{Liite\space}
-  \renewcommand{\appendixtocname}{Liitteet}
+  \renewcommand*{\cftappendixname}{Appendix\space}
+  \renewcommand{\appendixtocname}{Appendices}
 }{\renewcommand*{\cftappendixname}{Appendix\space}}
 %appendix header
-\IfLanguageName {finnish} {\def\appname{Liite\space}}{\def\appname{Appendix\space}}
+\IfLanguageName {finnish} {\def\appname{Appendix\space}}{\def\appname{Appendix\space}}
 
 %TITLES
 %chapter title
@@ -185,7 +185,7 @@
 %BIBLIOGRAPHY
 %bibliography title to be "references"
 %IF THE TITLE DON'T GET RENAMED PROPERLY, move that line after the \begin{document}
-\IfLanguageName {finnish} {\addto{\captionsfinnish}{\renewcommand*{\bibname}{Lähteet}}} {\renewcommand\bibname{References}}
+\IfLanguageName {finnish} {\addto{\captionsfinnish}{\renewcommand*{\bibname}{References}}} {\renewcommand\bibname{References}}
 \makeatletter %reference list option change
 \renewcommand\@biblabel[1]{#1\hspace{1cm}} %from [1] to 1 with 1cm gap
 \makeatother %
