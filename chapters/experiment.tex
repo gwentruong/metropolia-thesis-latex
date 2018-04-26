@@ -1,7 +1,7 @@
 % Experiments
 
 \chapter{Experimentation}
-In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web} which measures Kv factor, pressure and flow rate. All of equipments and components needed for operation are mentioned in appendix. The CAD models for pipeline and source code for analysis are also presented in appendix. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90 degree curves and rubber hoses.
+In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web} which measures Kv factor, pressure and flow rate. All of equipments and components needed for operation are mentioned in appendix. The CAD models for pipeline and source code for analysis are also presented in appendix. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90$^{\circ}$ curves and rubber hoses. The pipe used in Keravan Energy is DN50.
 \begin{figure}[h]
   \centering
   \includegraphics[width=8cm]{original_pipe}
@@ -15,7 +15,7 @@ The main goal of this laboratory experimentation is setting up the closest repli
 \begin{figure}[h]
   \centering
   \includegraphics[width=8cm]{cadlab}
-  \caption{ Basic pipe layout and positions of measuring points and Voxer wings \newline 1) Straight pipes 2 m; 2) 90 degree curves; 3) Straight pipe 1 m; 4) Straight pipe 0.5 m; 5) Plane connectors for measuring points}
+  \caption{ Basic pipe layout and positions of measuring points and Voxer wings \newline 1) Straight pipes 2 m; 2) 90$^{\circ}$ curves; 3) Straight pipe 1 m; 4) Straight pipe 0.5 m; 5) Plane connectors for measuring points}
   \label{fig:cadlab}
 \end{figure}
 Figure \vref{fig:cadlab} illustrated the basic setting of the pipelines. There are 4 measuring points which associates with plane connectors. The reason for creating these connectors is to create flat surface for ensuring secured pressurization of measuring points. It also minimizes the interference of the measuring device to the pressure and flow in the system. Each Voxer is connected to the end of each straight pipe, except the last one. There are maximum 4 Voxers using in each of measurement. With this settings, the pipeline is divided into 3 sections as pipes in series where total pressure is the accumulation of pressure from each section of the whole pipeline. In this experiment, we named section A from point 1 to 2, section B from point 2 to 3 and section C from point 3 to 4. Section T indicates the whole pipe from point 1 to 4 as the beginning and the end of the system. 
@@ -28,10 +28,10 @@ P_b&= \tn{Pressure change in section B} \\
 P_c&= \tn{Pressure change in section C} \\
 P_ab&= \tn{Pressure change in section A and B} \\
 \end{align}
-There are 2 types of Voxer which were used in the test :Voxer 40 degree DN40 and Voxer 30 degree DN40.  Different combinations of the amount of Voxer and types of Voxer were carried out to determine the behavior of flow in each section and find out the best combination. Table \ref{table:combi} lists out the combinations performed in this test. The pressure changes between section A, section A and B and total pipe were measured in every combination. Every measurement was repeated 10 times to ensure balanced values. During the test, the average temperature of water in vessel was measured also to consider its influence on fluid viscosity and surface tension.
+There are 2 types of Voxer which were used in the test : Voxer 40$^{\circ}$ DN40 and Voxer 30$^{\circ}$ DN40.  Different combinations of the amount of Voxer and types of Voxer were carried out to determine the behavior of flow in each section and find out the best combination. Table \ref{table:combi} lists out the combinations performed in this test. The pressure changes between section A, section A and B and total pipe were measured in every combination. Every measurement was repeated 10 times to ensure balanced values. During the test, the average temperature of water in vessel was measured also to consider its influence on fluid viscosity and surface tension. Measurement for empty pipe was performed as well. Inner diameter of the pipe was measured to have Voxer customized as a perfect fit inside the tube. The material of pipes is PP.
 \begin{table}[h]
   \centering
-  \caption{Voxer combination in lab test.\newline (V1 : Voxer in pipe 1; V12: Voxers in pipe 1 and 2, etc)}
+  \caption{Voxer combinations in lab test.\newline (V1 : Voxer in pipe 1; V12: Voxers in pipe 1 and 2, etc)}
   \begin{tabular}{l*{6}{c}}
 Type             & V0 & V1 & V12 & V123 & V1234 & V14 \\
 \hline
@@ -44,7 +44,7 @@ Mixed     & - & - & - & - & - & X   \\
 \end{table}
 \subsection{Setting of experiments}
 \textbf{Main pipe} \newline
-The pipeline test system was set like firgure \vref{fig:cadlab} in Metropolia’s laboratory.  Pipes were connected with others in series. The main straight horizontal pipe section is 5 meters long in total, which included two 2 meters of straight pipes and one 1 meter of straight pipe. Each side of main straight pipe was fitted with a 90 degree curve. There were two 0.5 meters of vertical pipe extensions at each side, acting as extended pipes for placing Voxer and measuring points. Two reducers were attached with these extended in order to accommodate the hose pump. Figure \vref{fig:wholepipe} demonstrates the completed setting of pipe.
+The pipeline test system was set like firgure \vref{fig:cadlab} in Metropolia’s laboratory.  Pipes were connected with others in series. The main straight horizontal pipe section is 5 meters long in total, which included two 2 meters of straight pipes and one 1 meter of straight pipe. Each side of main straight pipe was fitted with a 90$^{\circ}$ curve. There were two 0.5 meters of vertical pipe extensions at each side, acting as extended pipes for placing Voxer and measuring points. Two reducers were attached with these extended in order to accommodate the hose pump. Figure \vref{fig:wholepipe} demonstrates the completed setting of pipe.
 \begin{figure}[h]
   \centering
   \includegraphics[width=8cm]{wholepipe}
@@ -53,7 +53,7 @@ The pipeline test system was set like firgure \vref{fig:cadlab} in Metropolia’
 \end{figure}
 
 \textbf{Connectors, pump and vessels}\newline
-Pressure meter’s hoses were attached to the pipe by 4 plastic plane connectors glued above small holes on the pipe (see figure \vref{fig:connector}). Voxers were separated from metal sheet, bended and twisted following given instruction from SansOx Ltd. and inserted into different positions of the pipeline (see firgure \vref{fig:vox}). As mentioned before, the positions of Voxer were mainly at the end of each pipe. The system was set above the ground with 2 vessels at each side to keep the flow going with gravity, one as water reservoir and one for precaution leaking. A pump was positioned in water reservoir and connected with the starting pipe by hose. Water was delivered through the system and come back to the water reservoir. The ending pipe was submerged completely into water to balance static pressure in the system (see figure \vref{fig:subpipe}).
+Plastic connectors were 3-D printed. Pressure meter’s hoses were attached to the pipe by 4 plastic connectors glued above small holes on the pipe (see figure \vref{fig:connector}). Voxers were separated from metal sheet, bended and twisted following given instruction from SansOx Ltd. and inserted into different positions of the pipeline (see firgure \vref{fig:vox}). As mentioned before, the positions of Voxer were mainly at the end of each pipe. The system was set above the ground with 2 vessels at each side to keep the flow going with gravity, one as water reservoir and one for precaution leaking. A pump was positioned in water reservoir and connected with the starting pipe by hose. Water was delivered through the system and come back to the water reservoir. The ending pipe was submerged completely into water to balance static pressure in the system (see figure \vref{fig:subpipe}).
 
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
@@ -74,10 +74,104 @@ Pressure meter’s hoses were attached to the pipe by 4 plastic plane connectors
   \label{fig:subpipe}
 \end{figure}
 \subsection{Result and analysis}
-The data acquired from the lab experiment is treated 
+Since the data frame acquired from lab experiment is really extensive, the data is treated to take average value of each measurement and demonstrate through the following graphs.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=9cm]{40d_graph}
+  \caption{ Compare performance of each combination from Voxer 40$^{\circ}$DN40}
+  \label{fig:40d}
+\end{figure}
+In figure \vref{fig:40d}, all of combinations which have Voxer 40$^{\circ}$ DN40 are compared with each other. When the flow started through the 1st Voxer in section A, most of the pressure changes from different combinations result in the similar value around 5 to 7 millibars. Section A has the 1st Voxer before the curve. This show that the behavior of flow after each rotation in pipeline in section A is the same with each other. Starting from section B, we see the drastic change between V1, V14 and the rest of Voxer combinations. The pressure changes between in inflow and before section C are truly dramatic from 7 millibars to more than 25 millibars according to combinations with more than 2 Voxers in pipeline. When comparing pressure of section A and B between combination V1 and V14, V14 is appeared to have less pressure drop than V1. From total pressure drop point of view, V1 has the lowest pressure change while V14 and the rest of combination meet around 24 to 27 millibars. From this graph, it can be seen that 1 Voxer at position V1 results in the lowest pressure change which means that the pressure loss was reduced. 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{30d_graph}
+  \caption{Compare performance of each combination from Voxer 30$^{\circ}$ DN40}
+  \label{fig:30d}
+\end{figure}
+Figure \vref{fig:30d} illustrates the operation of Voxer 30$^{\circ}$ DN40 from five Voxer combinations. The trendlines from these combinations of Voxer 30$^{\circ}$ are much more uniform than those trendlines of Voxer 40$^{\circ}$. They all started in section A with a short range of pressure change from 5 to 9 millibars. After section A and B, most of trendlines except V14 meet each other at the intersection of 12 millibars. From here, these trendlines don't separate at total pressure (0.5 to 1 millibar difference) from each other that much except V12 (22 millibars). Meanwhile, V14 keeps the parallel trendlines at the lower level from 6 to 14 millibars.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=9cm]{compare_graph}
+  \caption{ Comparison among good Voxer combinations }
+  \label{fig:compare}
+\end{figure}
+We compare the most potential combination from each Voxer type with the mixed combination and standard pipeline with no Voxer inside in figure \vref{fig:compare}. It can be clearly seen that, the correlation of pressure change along the pipe of standard pipeline, combination V1 of Voxer 40$^{\circ}$ and combination V14 of Voxer 30 $^{\circ}$ DN40 are almost parallel with each other, while the mixed combination V1 (Voxer 30$^{\circ}$) and V4 (Voxer 40$^{\circ}$) leads to the increase in pressure change. Section C is the section with the 4th Voxer placed before the last curve.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=9cm]{Pt_graph}
+  \caption{ Total pressure change among all combinations}
+  \label{fig:pt}
+\end{figure}
+From figure \vref{fig:pt}, it can be concluded that the lowest pressure change in total is from combination V14 of Voxer 30$^{\circ}$DN40. Voxer 30$^{\circ}$ performs better than Voxer 40$^{\circ}$. More Voxers in the pipeline, especially inside the main horizontal pipeline would increase pressure change of system in total.  
 \section{Experimentation in Keravan Energy}
+With the result from the laboratory test, we move on to the design of alternative pipeline in the cooling system. Information about system was given from Keravan Energy. It is known that the income flow rate is around 2 liters per second (local measure) at 1 bar pressure. The input temperature is 6\celsius and the output temperature is 16\celsius. 
+Since it is not advised to interfere with the existing pipeline of cooling system, we should assemble an alternative pipeline with characteristics needed for the comparative measurement. In this experiment at Keravan Energy, we observe the behavior of Voxer under realistic uncontrolled condition. The assembly was done in Metropolia's mechanical laboratory.  
 \subsection{Experiment's design}
+From the observation of original pipeline section (see figure \vref{fig:orgpipe}, it is clear that Voxer couldn't be placed inside rubber hoses but inside straight steel circular pipe. This also applied on positions of measuring points to measure inflow before the curve and outflow after the curve. The water flow rate in Keravan Energy is much higher than the one from pump used in the lab test. So there are chances that water would be leaked from the pipe leading to more energy loss. The fact that Voxer wing should be easy to remove from pipe between different combination is taken into consideration.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=10cm]{cadkerava}
+  \caption{ Drawing of pipeline for experiment at Keravan Energy}
+  \label{fig:cadkerava}
+\end{figure}
+A design of pipeline shown in figure \vref{fig:cadkerava} is the experiment's solution for most of problems above. The length of pipeline section was taken from CAD documentation of Keravan Energy and measured again in place. In this setup, there are maximum 2 Voxers tested in the pipeline. Voxer wings were placed from separated pipe (we call them Voxer pipes) with flanges which would easy be connected to the main pipe. 
+Rubber hoses were attached to the pipeline by reducers at each side. The measuring points were positioned on the reducers to catch inflow and outflow pressure as well as the middle of long pipe. We divided this testing pipeline into 2 sections. Section A is from inflow reducer to middle point of pipe. Section B is from the middle point to the outflow reducer. The same principles were applied on pressure changes of this pipeline: 
+\begin{align}
+\delta P_t&= P_ab = P_a + P_b \\
+\delta P_ab&= \tn{Total pressure change in pipeline} \\
+P_a&= \tn{Pressure change in section A} \\
+P_b&= \tn{Pressure change in section B} \\
+\end{align}
+In this experiment, two types of Voxer were also tested (Voxer $30^{\circ}$ DN50 and Voxer $40^{\circ}$ DN50). The measurements of section B and total pressure were measured by pressure meter. There are three combinations of Voxer in the test: None (indicating empty pipe with no Voxer inside), degree 30 (2 Voxers DN50 $30^{\circ}$), degree 40 ( 2 Voxers DN50 $40^{\circ}$) (see table \ref{table:kerava}). The material of pipes is carbon steel. All of components were purchased from Ahnsell and assembled in Metropolia's mechanical lab.
+\begin{table}[h]
+  \centering
+  \caption{Voxer combinations in Keravan Energy's test}
+  \begin{tabular}{l*{2}{c}}
+Type             & V0 & V12 \\
+\hline
+None & X & -   \\
+degree 30           & - & X   \\
+degree 40          & - & X   \\
+\end{tabular}
+  \label{table:kerava}
+\end{table}
 \subsection{Setting of experiments}
+\subsubsection{Components Assembly}
+\textit{Measuring points}\newline
+A metal rod was cut into parts and tapped to create thread for measuring point connectors. Then hole were drilled to create contact space with pressure meter. The cylinder metal parts were welded into reducers and middle point of long pipe above those holes. Figure \vref{fig:coke} presents the final look of measuring points.
+
+\textit{Pipes}\newline
+The main 6 meters carbon steel pipe was cut into parts: two Voxer pipes, two side pipes and one long middle pipe. Voxer pipes and long middle pipe were welded with two flanges on each side. Then curves were welded together with side pipes and reducers as a unit. Before welding, the reducers were shaped to fit with rubber hose (see figure \vref{fig:sidepipe}).
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=0.7\linewidth]{connect_ke}
+     \caption{Metal connector as measuring points}\label{fig:coke}
+   \end{minipage}\hfill
+   \begin {minipage}{0.48\textwidth}
+     \centering
+     \includegraphics[width=.7\linewidth]{new_side_pipe}
+     \caption{Curve, reducer and side pipe}\label{fig:sidepipe}
+   \end{minipage}
+\end{figure}
+\subsubsection{Setting up in Keravan Energy}
+At Keravan Energy, the original pipeline section was removed and altered with our testing pipeline. The frame was raised to hold the weight of the new pipeline with higher height than the original one. New rubber hoses were cut to fit the new pipeline. After testing and adjusting some minor problems in the system, the flow rate was adjusted from 2 to 0.8 liters per second to reduce pressure applied on minor leaking points along the pipe. Figure shows an overview of the setting.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=9cm]{overview_test}
+  \caption{ An overview of the testing pipeline}
+  \label{fig:overview}
+\end{figure}
 \subsection{Result and analysis}
+From the observations through the pressure meter, the pressure values of each measurement were not stable and varying in a large range. The result from Kervan Energy experiment was not as accurate as the result from lab experiment since the measurement was performed under uncontrolled condition in such limited amount of time. Therefore each measurement was recorded and transcribed into separate CSV files. In the experiment, P$_{\text{b}}$ and P$_{\text{ab}}$ were recorded. There are 100 points from each measurement transcribed. The flow rate of the system was maintained around 0.8 liters per second throughout the whole experiment. There were some minor water leaking around measuring points as well.
+
+From Figure a, it can be seen that the total pressure inside the empty piping section varies in a large range from -10 to 30 millibars. The negative values can be explained as the possibility of cavitation occurrence due to high velocity. The most occurring pressure values are ranged from 10 to 20 millibars. The dotted line illustrated smoothened density line of total pressure in empty pipe. 
+
+It is illustrated in figure , the total pressure of a combination of two Voxers 30$^{/circ}$. Values ranges vastly from 0 to 50 millibars. The most popular values in this combination varies from 20 to 40 millibars.
+
+There are some differences in combination Voxer 40$^{/circ}$ with empty pipe and Voxer 30$^{/circ}$. The distribution of 2 other graphs show the pattern of normal distribution while this graph shows large range of value distribution. Values vary from 40 to 90 millibars, which is much higher than measurements from empty pipe and Voxer 30$^{/circ}$. Pressure change values occur most around 50 to 65 millibars and from 75 to 80 millibars. 
+
+Each point in figure represents pressure value of section B with 2nd Voxer in the piping section throughout recorded times. The line smoothens the trend of pressure values in each type of combination. From here, we can see that .
+
 
 \clearpage %force the next chapter to start on a new page. Keep that as the last line of your chapter!
