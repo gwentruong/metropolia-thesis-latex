@@ -2,7 +2,7 @@
 
 \chapter{Experimentation}
 
-In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web} which measures Kv factor, pressure and flow rate. All of equipments and components needed for operation are mentioned in appendix. The CAD models for pipeline and source code for analysis are also presented in appendix. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90$^{\circ}$ curves and rubber hoses. The pipe used in Keravan Energy is DN50.
+In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web}. All of equipments and components needed for operation are mentioned in appendix. The CAD models for pipeline and source code for analysis are also presented in appendix. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90$^{\circ}$ curves and rubber hoses. The pipe used in Keravan Energy is DN50.
 
 \begin{figure}[h]
   \centering
@@ -30,8 +30,8 @@ Figure \vref{fig:cadlab} illustrated the basic setting of the pipelines. There a
 Since pipes are connected in series, we have:
 
 \begin{align}
-\delta P_t&= P_a + P_b + P_c = P_ab + P_c \\
-\delta P_t&= \tn{Total pressure change in pipeline} \\
+\Delta P_t&= P_a + P_b + P_c = P_ab + P_c \\
+\Delta P_t&= \tn{Total pressure change in pipeline} \\
 P_a&= \tn{Pressure change in section A} \\
 P_b&= \tn{Pressure change in section B} \\
 P_c&= \tn{Pressure change in section C} \\
@@ -149,8 +149,8 @@ A design of pipeline shown in figure \vref{fig:cadkerava} is the experiment's so
 Rubber hoses were attached to the pipeline by reducers at each side. The measuring points were positioned on the reducers to catch inflow and outflow pressure as well as the middle of long pipe. We divided this testing pipeline into 2 sections. Section A is from inflow reducer to middle point of pipe. Section B is from the middle point to the outflow reducer. The same principles were applied on pressure changes of this pipeline: 
 
 \begin{align}
-\delta P_t&= P_ab = P_a + P_b \\
-\delta P_ab&= \tn{Total pressure change in pipeline} \\
+\Delta P_t&= P_ab = P_a + P_b \\
+\Delta P_ab&= \tn{Total pressure change in pipeline} \\
 P_a&= \tn{Pressure change in section A} \\
 P_b&= \tn{Pressure change in section B} \\
 \end{align}
@@ -260,7 +260,7 @@ Firgure \vref{fig:pabplot} shows the significant division of value range among 3
   \label{fig:pbdensity}
 \end{figure}
 
-In the technical document, Mr. Pylkkänen mentioned that the optimal position to place the Voxer is where turbulence occur and flow losses normally. This might be technically correct statement in section B, where 2nd Voxer was place before the last curve. In figure \vref{fig:pbdensity}, we see the density of pressure change in section B among 3 combinations. Except Voxer 40$^{\circ}$ combination, Voxer 30$^{\circ}$ presents that it has the potential to reduce pressure drop when compared with empty pipe since it overlaps with the distribution line of empty line with a lower probability.  
+In the technical document, Mr. Pylkkänen mentioned that the optimal position to place the Voxer is where turbulence occur and flow losses normally. This might be technically correct statement in section B, where 2nd Voxer was place before the last curve. In figure \ref{fig:pbdensity}, we see the density of pressure change in section B among 3 combinations. Except Voxer 40$^{\circ}$ combination, Voxer 30$^{\circ}$ presents that it has the potential to reduce pressure drop when compared with empty pipe since it overlaps with the distribution line of empty line with a lower probability.  
 
 \begin{figure}[h]
   \centering
