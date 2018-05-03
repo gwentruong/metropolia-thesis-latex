@@ -34,6 +34,8 @@
 \usepackage{verbatim}
 %for "easier" references
 \usepackage{varioref}
+%for making multirows in tabular
+\usepackage{multirow}
 %forcing single line spacing in bibliography
 \DisemulatePackage{setspace}
 \usepackage{setspace}
@@ -41,6 +43,8 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+% Wrap text around figure
+\usepackage{wrapfig}
 %change the numbering for figure
 \usepackage{chngcntr}
 %strike trough
@@ -55,13 +59,17 @@
 \usepackage[newfloat]{minted}
 \setminted{tabsize=2,linenos,breaklines,breaksymbolleft={\quad},baselinestretch=1}
 \setmintedinline{breaklines}
-\usepackage[justification=justified,singlelinecheck=false]{caption}
+\usepackage[justification=centering,singlelinecheck=false]{caption}
 \usepackage{color}
 %force the width of a table instead of column
 \usepackage{tabularx}
 \usepackage{booktabs} %why not booktabs? :3
 % Abbreviations, acronym and glossary
 \usepackage[acronym,nonumberlist,section]{glossaries}%xindy,%toc, ,nomain
+
+%force table fit in page
+\usepackage{adjustbox}
+\usepackage{rotating}
 
 \usepackage{float} % For forced figure location with modifier H (\begin{figure}[H])
 \usepackage{cite} % Make citations to match Metropolia thesis guide

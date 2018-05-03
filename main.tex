@@ -25,7 +25,6 @@
 % Please:
 % If you find mistakes, improve this template and alike, please contribute by sharing 
 % your improvements and/or send us your feedback there: 
-% https://github.com/panunu/metropolia-thesis-latex
 % And of course, if you improve it, add yourself as an author.
 %
 % Compiler:
@@ -160,18 +159,25 @@
 
 \liite{1}% This is a hack to have right page numbering for each appendix. Make sure to 
 	 % use a unique number for each appendix.
-%\input{sample/Xappendix1.tex}% Sample content to demonstrate appendix in LaTeX. You
+\input{sample/Xappendix1.tex}% Sample content to demonstrate appendix in LaTeX. You
 % are safe to delete this lines (and the next samples) once you refreshed your LaTeX 
 % skills (and safe to delete the sample folder and all its file too).
 
-\addtocontents{toc}{\vspace{11pt}}%fix vertical space for Table of Content
+\addtocontents{toc}{\vspace{3pt}}%fix vertical space for Table of Content
 \liite{2}
-%\input{sample/Xappendix2.tex}
+\input{sample/appendix2.tex}
 
 \addtocontents{toc}{\vspace{11pt}}
 \liite{3}
-%\input{sample/X_R_example.tex}
+\input{sample/appendix3.tex}
 
+\addtocontents{toc}{\vspace{3pt}}
+\liite{4}
+\input{sample/appendix4.tex}
+
+\addtocontents{toc}{\vspace{11pt}}
+\liite{5}
+\input{sample/appendix5.tex}
 
 %----------------------------------------------------------------------------------------
 %	THIS IS THE END 

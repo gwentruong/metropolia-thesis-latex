@@ -2,7 +2,7 @@
 
 \chapter{Experimentation}
 
-In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web}. All of equipments and components needed for operation are mentioned in appendix. The CAD models for pipeline and source code for analysis are also presented in appendix. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90$^{\circ}$ curves and rubber hoses. The pipe used in Keravan Energy is DN50.
+In this chapter, we will go through the process, result and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The pressure meter used in both tests is Danfoss PFM 100 \cite{danfoss:web}. The \gls{cad} models for pipeline is shown in appendix \ref{appx:second}; and source code for analysis are also presented in appendix \ref{appx:first}. Figure \vref{fig:orgpipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two 90$^{\circ}$ elbows and rubber hoses. The pipe used in Keravan Energy is \gls{dn}50. In these experiments, the fluid flows were recognized as turbulent flow. Turbulent flow occurs when instabilities in a flow are not sufficiently damped by viscous action and the fluid velocity at each point in the flow exhibits random fluctuations \cite{turbulent:article}.
 
 \begin{figure}[h]
   \centering
@@ -17,18 +17,17 @@ It is essential to get a full understanding about the hydraulic system, product 
 
 \subsection{Experiment's design}
 
-The main goal of this laboratory experimentation is setting up the closest replication of cooling piping section with PP material and determining which Voxer combination is the best for the real test in Keravan Energy. Apart from that, there are some other learning points in this test also; for example: understanding the structure of the targeted pipeline, learning about Voxer and how to assemble it into the system, insights from impacts of different setting conditions to the result of measurements.
+The main goal of this laboratory experimentation is setting up the closest replication of cooling piping section with \gls{pp} material and determining which Voxer combination is the best for the real test in Keravan Energy. Apart from that, there are some other learning points in this test also; for example: understanding the structure of the targeted pipeline, learning about Voxer and how to assemble it into the system, insights from impacts of different setting conditions to the result of measurements.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=8cm]{cadlab}
-  \caption{ Basic pipe layout and positions of measuring points and Voxer wings \newline 1) Straight pipes 2 m; 2) 90$^{\circ}$ curves; 3) Straight pipe 1 m; 4) Straight pipe 0.5 m; 5) Plane connectors for measuring points}
+  \caption{ Basic pipe layout and positions of measuring points and Voxer wings \newline 1) Straight pipes 2 m; 2) 90$^{\circ}$ bends; 3) Straight pipe 1 m; 4) Straight pipe 0.5 m; 5) Plane connectors for measuring points}
   \label{fig:cadlab}
 \end{figure}
 
 Figure \vref{fig:cadlab} illustrated the basic setting of the pipelines. There are 4 measuring points which associates with plane connectors. The reason for creating these connectors is to create flat surface for ensuring secured pressurization of measuring points. It also minimizes the interference of the measuring device to the pressure and flow in the system. Each Voxer is connected to the end of each straight pipe, except the last one. There are maximum 4 Voxers using in each of measurement. With this settings, the pipeline is divided into 3 sections as pipes in series where total pressure is the accumulation of pressure from each section of the whole pipeline. In this experiment, we named section A from point 1 to 2, section B from point 2 to 3 and section C from point 3 to 4. Section T indicates the whole pipe from point 1 to 4 as the beginning and the end of the system. 
 Since pipes are connected in series, we have:
-
 \begin{align}
 \Delta P_t&= P_a + P_b + P_c = P_ab + P_c \\
 \Delta P_t&= \tn{Total pressure change in pipeline} \\
@@ -37,12 +36,11 @@ P_b&= \tn{Pressure change in section B} \\
 P_c&= \tn{Pressure change in section C} \\
 P_ab&= \tn{Pressure change in section A and B} \\
 \end{align}
-
-There are 2 types of Voxer which were used in the test : Voxer 40$^{\circ}$ DN40 and Voxer 30$^{\circ}$ DN40.  Different combinations of the amount of Voxer and types of Voxer were carried out to determine the behavior of flow in each section and find out the best combination. Table \ref{table:combi} lists out the combinations performed in this test. The pressure changes between section A, section A and B and total pipe were measured in every combination. Every measurement was repeated 10 times to ensure balanced values. During the test, the average temperature of water in vessel was measured also to consider its influence on fluid viscosity and surface tension. Measurement for empty pipe was performed as well. Inner diameter of the pipe was measured to have Voxer customized as a perfect fit inside the tube. The material of pipes is PP.
+There are 2 types of Voxer which were used in the test : Voxer 40$^{\circ}$ DN40 and Voxer 30$^{\circ}$ DN40.  Different combinations of the amount of Voxer and types of Voxer were carried out to determine the behavior of flow in each section and find out the best combination. Table \ref{table:combi} lists out the combinations performed in this test. The pressure changes between section A, section A and B and total pipe were measured in every combination. Every measurement was repeated 10 times to ensure balanced values. During the test, the average temperature of water in vessel was measured also to consider its influence on fluid \gls{viscos} and surface tension. Measurement for pipe without Voxer installed was performed as well. Inner diameter of the pipe was measured to have Voxer customized as a perfect fit inside the tube. The material of pipes is PP.
 
 \begin{table}[h]
   \centering
-  \caption{Voxer combinations in lab test.\newline (V1 : Voxer in pipe 1; V12: Voxers in pipe 1 and 2, etc)}
+  \caption{Voxer combinations in lab test.\newline (V1 : Voxer in pipe 1; V12: Voxers in pipe 1 and 2; Mixed: mixed combination of 30$^{\circ}$ Voxer as  V1 and 40$^{\circ}$ Voxer as V4; etc)}
   \begin{tabular}{l*{6}{c}}
 Type             & V0 & V1 & V12 & V123 & V1234 & V14 \\
 \hline
@@ -82,6 +80,7 @@ Plastic connectors were 3-D printed. Pressure meter’s hoses were attached to t
    \end{minipage}
 \end{figure}
 
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=9cm]{sub-pipe}
@@ -93,36 +92,36 @@ Plastic connectors were 3-D printed. Pressure meter’s hoses were attached to t
 
 Since the data frame acquired from lab experiment is really extensive, the data is treated to take average value of each measurement and demonstrate through the following graphs.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=9cm]{40d_graph}
+  \includegraphics[width=11cm]{40d_graph}
   \caption{ Compare performance of each combination from Voxer 40$^{\circ}$DN40}
   \label{fig:40d}
 \end{figure}
 
 In figure \vref{fig:40d}, all of combinations which have Voxer 40$^{\circ}$ DN40 are compared with each other. When the flow started through the 1st Voxer in section A, most of the pressure changes from different combinations result in the similar value around 5 to 7 millibars. Section A has the 1st Voxer before the curve. This show that the behavior of flow after each rotation in pipeline in section A is the same with each other. Starting from section B, we see the drastic change between V1, V14 and the rest of Voxer combinations. The pressure changes between in inflow and before section C are truly dramatic from 7 millibars to more than 25 millibars according to combinations with more than 2 Voxers in pipeline. When comparing pressure of section A and B between combination V1 and V14, V14 is appeared to have less pressure drop than V1. From total pressure drop point of view, V1 has the lowest pressure change while V14 and the rest of combination meet around 24 to 27 millibars. From this graph, it can be seen that 1 Voxer at position V1 results in the lowest pressure change which means that the pressure loss was reduced. 
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=10cm]{30d_graph}
+  \includegraphics[width=11cm]{30d_graph}
   \caption{Compare performance of each combination from Voxer 30$^{\circ}$ DN40}
   \label{fig:30d}
 \end{figure}
 
 Figure \vref{fig:30d} illustrates the operation of Voxer 30$^{\circ}$ DN40 from five Voxer combinations. The trendlines from these combinations of Voxer 30$^{\circ}$ are much more uniform than those trendlines of Voxer 40$^{\circ}$. They all started in section A with a short range of pressure change from 5 to 9 millibars. After section A and B, most of trendlines except V14 meet each other at the intersection of 12 millibars. From here, these trendlines don't separate at total pressure (0.5 to 1 millibar difference) from each other that much except V12 (22 millibars). Meanwhile, V14 keeps the parallel trendlines at the lower level from 6 to 14 millibars.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=9cm]{compare_graph}
+  \includegraphics[width=11cm]{compare_graph}
   \caption{ Comparison among good Voxer combinations }
   \label{fig:compare}
 \end{figure}
 
 We compare the most potential combination from each Voxer type with the mixed combination and standard pipeline with no Voxer inside in figure \vref{fig:compare}. It can be clearly seen that, the correlation of pressure change along the pipe of standard pipeline, combination V1 of Voxer 40$^{\circ}$ and combination V14 of Voxer 30 $^{\circ}$ DN40 are almost parallel with each other, while the mixed combination V1 (Voxer 30$^{\circ}$) and V4 (Voxer 40$^{\circ}$) leads to the increase in pressure change. Section C is the section with the 4th Voxer placed before the last curve.
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=9cm]{Pt_graph}
+  \includegraphics[width=11cm]{Pt_graph}
   \caption{ Total pressure change among all combinations}
   \label{fig:pt}
 \end{figure}
@@ -140,21 +139,19 @@ From the observation of original pipeline section (see figure \vref{fig:orgpipe}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=10cm]{cadkerava}
+  \includegraphics[width=13cm]{cadkerava}
   \caption{ Drawing of pipeline for experiment at Keravan Energy}
   \label{fig:cadkerava}
 \end{figure}
 
 A design of pipeline shown in figure \vref{fig:cadkerava} is the experiment's solution for most of problems above. The length of pipeline section was taken from CAD documentation of Keravan Energy and measured again in place. In this setup, there are maximum 2 Voxers tested in the pipeline. Voxer wings were placed from separated pipe (we call them Voxer pipes) with flanges which would easy be connected to the main pipe. 
 Rubber hoses were attached to the pipeline by reducers at each side. The measuring points were positioned on the reducers to catch inflow and outflow pressure as well as the middle of long pipe. We divided this testing pipeline into 2 sections. Section A is from inflow reducer to middle point of pipe. Section B is from the middle point to the outflow reducer. The same principles were applied on pressure changes of this pipeline: 
-
 \begin{align}
 \Delta P_t&= P_ab = P_a + P_b \\
 \Delta P_ab&= \tn{Total pressure change in pipeline} \\
 P_a&= \tn{Pressure change in section A} \\
 P_b&= \tn{Pressure change in section B} \\
 \end{align}
-
 In this experiment, two types of Voxer were also tested (Voxer $30^{\circ}$ DN50 and Voxer $40^{\circ}$ DN50). The measurements of section B and total pressure were measured by pressure meter. There are three combinations of Voxer in the test: None (indicating empty pipe with no Voxer inside), degree 30 (2 Voxers DN50 $30^{\circ}$), degree 40 ( 2 Voxers DN50 $40^{\circ}$) (see table \ref{table:kerava}). The material of pipes is carbon steel. All of components were purchased from Ahnsell and assembled in Metropolia's mechanical lab.
 
 \begin{table}[h]
@@ -197,29 +194,30 @@ The main 6 meters carbon steel pipe was cut into parts: two Voxer pipes, two sid
 
 At Keravan Energy, the original pipeline section was removed and altered with our testing pipeline. The frame was raised to hold the weight of the new pipeline with higher height than the original one. New rubber hoses were cut to fit the new pipeline. After testing and adjusting some minor problems in the system, the flow rate was adjusted from 2 to 0.8 liters per second to reduce pressure applied on minor leaking points along the pipe. Figure \vref{fig:overview} shows an overview of the setting.
 
-\begin{figure}[h]
+\begin{figure}[b]
   \centering
-  \includegraphics[width=9cm]{overview_test}
+  \includegraphics[width=8cm]{overview_test}
   \caption{ An overview of the testing pipeline}
   \label{fig:overview}
 \end{figure}
 
 \subsection{Result and analysis}
 
-From the observations through the pressure meter, the pressure values of each measurement were not stable and varying in a large range. The result from Kervan Energy experiment was not as accurate as the result from lab experiment since the measurement was performed under uncontrolled condition in such limited amount of time. Therefore each measurement was recorded and transcribed into separate CSV files. In the experiment, P$_{\text{b}}$ and P$_{\text{ab}}$ were recorded. There are 100 points from each measurement transcribed. The flow rate of the system was maintained around 0.8 liters per second throughout the whole experiment. There were some minor water leaking around measuring points as well.
+From the observations through the pressure meter, the pressure values of each measurement were not stable and varying in a large range. The result from Kervan Energy experiment was not as accurate as the result from lab experiment since the measurement was performed under uncontrolled condition in such limited amount of time. Therefore each measurement was recorded in separated videos and transcribed into separate \gls{csv} files. In the experiment, P$_{\text{b}}$ and P$_{\text{ab}}$ were recorded. There are 100 points from each measurement transcribed. The flow rate of the system was maintained around 0.8 liters per second throughout the whole experiment. There were some minor water leaking around measuring points as well.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=8cm]{hist_none}
+  \includegraphics[width=10cm]{hist_none}
   \caption{ Histogram of total pressure change values in empty pipeline}
   \label{fig:histnone}
 \end{figure}
 
-From Figure \vref{fig:histnone}, it can be seen that the total pressure inside the empty piping section varies in a large range from -10 to 30 millibars. The negative values can be explained as the possibility of cavitation occurrence due to high velocity. The most occurring pressure values are ranged from 10 to 20 millibars. The dotted line illustrated smoothened density line of total pressure in empty pipe. 
+From Figure \vref{fig:histnone}, it can be seen that the total pressure inside the empty piping section varies in a large range from -10 to 30 millibars. The negative values can be explained as the possibility of \gls{cavit} occurrence due to high velocity. The most occurring pressure values are ranged from 10 to 20 millibars. The dotted line illustrated smoothened density line of total pressure in empty pipe. 
+\newpage
 
-\begin{figure}[h]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=8cm]{Hist_30d}
+  \includegraphics[width=9cm]{Hist_30d}
   \caption{ Histogram of total pressure change values with Voxer 30$^{\circ}$}
   \label{fig:hist30d}
 \end{figure}
@@ -228,7 +226,7 @@ It is illustrated in figure \vref{fig:hist30d}, the total pressure of a combinat
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=8cm]{Hist_40d}
+  \includegraphics[width=8.5cm]{Hist_40d}
   \caption{ Histogram of total pressure change values  with Voxer 40$^{\circ}$}
   \label{fig:hist40d}
 \end{figure}
@@ -237,7 +235,7 @@ There are some differences in combination Voxer 40$^{\circ}$ with empty pipe and
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=8cm]{Pb_plot}
+  \includegraphics[width=8.5cm]{Pb_plot}
   \caption{ Graph of P$_{\text{b}}$ among three combinations throughout time}
   \label{fig:pbplot}
 \end{figure}
@@ -246,25 +244,26 @@ Each point in figure \vref{fig:pbplot} represents pressure value of section B wi
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=8cm]{Pab_plot}
+  \includegraphics[width=9cm]{Pab_plot}
   \caption{ Graph of P$_{\text{ab}}$ among three combinations throughout time}
   \label{fig:pabplot}
 \end{figure}
 
-Firgure \vref{fig:pabplot} shows the significant division of value range among 3 combinations at total pressure change . Voxer 40$^{\circ}$  has the largest pressure drop range and reducing pressure drop trendline over time. Empty pipe and Voxer 30$^{\circ}$ have stable pressure drop over time. Total pressure drop range of Voxer 30$^{\circ}$ is 20 millibars larger than empty pipe. 
+Firgure \ref{fig:pabplot} shows the significant division of value range among 3 combinations at total pressure change . Voxer 40$^{\circ}$  has the largest pressure drop range and reducing pressure drop trendline over time. Empty pipe and Voxer 30$^{\circ}$ have stable pressure drop over time. Total pressure drop range of Voxer 30$^{\circ}$ is 20 millibars larger than empty pipe. 
 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
-  \includegraphics[width=8cm]{Pb_density}
+  \includegraphics[width=10cm]{Pb_density}
   \caption{ Comparison P$_{\text{b}}$ values density among three combinations}
   \label{fig:pbdensity}
 \end{figure}
 
 In the technical document, Mr. Pylkkänen mentioned that the optimal position to place the Voxer is where turbulence occur and flow losses normally. This might be technically correct statement in section B, where 2nd Voxer was place before the last curve. In figure \ref{fig:pbdensity}, we see the density of pressure change in section B among 3 combinations. Except Voxer 40$^{\circ}$ combination, Voxer 30$^{\circ}$ presents that it has the potential to reduce pressure drop when compared with empty pipe since it overlaps with the distribution line of empty line with a lower probability.  
+\newpage
 
-\begin{figure}[h]
+\begin{figure}[t]
   \centering
-  \includegraphics[width=8cm]{Pab_density}
+  \includegraphics[width=10cm]{Pab_density}
   \caption{ Comparison P$_{\text{ab}}$ values density among three combinations}
   \label{fig:pabdensity}
 \end{figure}

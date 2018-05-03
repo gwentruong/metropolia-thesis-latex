@@ -1,29 +1,37 @@
 % Appendix 
 % And demonstrate text references and bibliography references in appendix
 
-\chapter{Some Appendix}\label{appx:first}
+\chapter{Data analysis}\label{appx:first}
 
-Note that every appendix will be a chapter.
+\section{Mean value of data from laboratory experiment}
 
-Sorry for the ugly hack on how to count the total pages per appendix.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ | l | l | l | l | l |  }
+\hline
+Type & Delta P  & $P_{a}$ & $P_{b}$ & $P_{t}$ \\
+\hline
+None & V0 & 7.00 & 12.90 & 18.60 \\ \hline
+\multirow{5}{*}{40$^{\circ}$} & V1 & 5.40 & 10.50 & 17.00 \\
+ & V12 & 5.40 & 21.80 & 25.10 \\
+ & V123 & 5.80 & 25.40 & 25.70 \\
+ & V1234 & 5.80 & 26.60 & 27.50 \\
+ & V14 & 8.60 & 9.60 & 23.00\\ \hline
+\multirow{5}{*}{30$^{\circ}$} & V1 & 9.00 & 11.90 & 17.60 \\
+ & V12 & 5.10 & 12.00 & 21.40 \\
+ & V123 & 5.10 & 11.60 & 17.00 \\
+ & V1234 & 5.10 & 11.80 & 18.10 \\
+ & V14 & 6.00 & 8.70 & 14.10\\ \hline
+30$^{\circ}$- 40$^{\circ}$ & V14 & 7.60 & 9.10 & 22.30 \\ \hline
+\end{tabular}
+\end{table}
 
-
-Of course with section and subsection.
-
-\section{Appendix Section}
-
-And you can cite \cite{tobias:book} stuff, it will go into the main bibliography.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam aliquam purus, in ornare nulla imperdiet molestie. Nam tempus erat eu dui rhoncus et vestibulum mi elementum. Ut porttitor elit sit amet justo dignissim sit amet sagittis massa egestas. Mauris sed dolor eget dui fermentum sodales ut eu nibh.
-
-Quisque augue est, elementum ac porttitor non, porttitor ac orci. Donec hendrerit, ligula ac luctus egestas, sem dolor pretium nunc, sed vehicula magna diam a massa. Donec mattis, arcu et tempor mattis, risus tortor ultrices metus, nec sodales sem dolor eu elit. Nullam egestas enim at odio pellentesque bibendum. 
-
-\subsection{With a Subsection}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam aliquam purus, in ornare nulla imperdiet molestie. Nam tempus erat eu dui rhoncus et vestibulum mi elementum. Ut porttitor elit sit amet justo dignissim sit amet sagittis massa egestas. Mauris sed dolor eget dui fermentum sodales ut eu nibh.
-
-Quisque augue est, elementum ac porttitor non, porttitor ac orci. Donec hendrerit, ligula ac luctus egestas, sem dolor pretium nunc, sed vehicula magna diam a massa. Donec mattis, arcu et tempor mattis, risus tortor ultrices metus, nec sodales sem dolor eu elit. Nullam egestas enim at odio pellentesque bibendum. 
-
-Donec et sapien ac leo condimentum vulputate id et tellus. Maecenas hendrerit malesuada interdum. Aenean dignissim sem faucibus elit congue faucibus id non risus. Morbi at dui non tortor pellentesque consequat non eget urna. Cras in sapien dui, a tincidunt velit.
+\section{R code for analysis of Keravan experiment}
+\begin{code}
+  \inputminted{r}{code/test.R}
+  \captionof{listing}{R code}
+  \label{code:rcode}
+\end{code}
 
 \clearpage %force the next chapter/appendix to start on a new page. Keep that as the last line of your appendix!
+
