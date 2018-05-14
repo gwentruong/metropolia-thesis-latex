@@ -197,7 +197,7 @@ FUNCTION {format.lastchecked}
 { lastchecked empty$
     { "" }
     { updated empty$
-      { "Luettu " lastchecked * }
+      { "Last checked " lastchecked * }
       { "Päivitetty " updated * "; Luettu " * lastchecked * }
     if$
     }
@@ -1560,7 +1560,7 @@ FUNCTION {online}
   if$
   
 
-  format.type "Verkkodokumentti" output
+  format.type "Web document" output
   format.publishers "publisher" output.check
   new.block
   format.note output
