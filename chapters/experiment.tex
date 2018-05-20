@@ -2,7 +2,8 @@
 
 \chapter{Experimentation}
 
-In this chapter, we will go through the process, result, and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The \gls{cad} models for pipeline is shown in appendix \ref{appx:second}; and source code for analysis are also presented in appendix \ref{appx:first}. Figure \vref{fig:original_pipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two $90^{\circ}$ elbows and rubber hoses. The pipe used in Keravan Energy is DN50. In these experiments, the fluid flows were recognized as turbulent flow. Turbulent flow occurs when instabilities in a flow are not sufficiently damped by viscous action and the fluid velocity at each point in the flow exhibits random fluctuations \cite{turbulent:article}.
+In this chapter, we will go through the process, result, and analysis of two experiments for Voxer's comparative testing in Keravan Energy's cooling system. The \gls{cad} models for pipeline is shown in appendix \ref{appx:second}; and source code for analysis are also presented in appendix \ref{appx:first}. Figure \vref{fig:original_pipe} shows the original cooling piping section in Keravan Energy. The pipeline includes these main components: one 5 meters of straight pipe, two $90^{\circ}$ elbows and rubber hoses. The pipe used in Keravan Energy is DN50. In these experiments, the fluid flows were recognized as turbulent flow. Turbulent flow occurs when instabilities in a flow are not sufficiently damped by viscous action and the fluid velocity at each point in the flow exhibits random fluctuations \cite{turbulent:article}. The fluid tested in both of experiment was a Newtonian fluid, water, at moderate temperatures.
+
 
 \section{Laboratory experimentation}
 
@@ -91,7 +92,7 @@ Since the data frame acquired from lab experiment is really extensive, the value
   \label{fig:40d}
 \end{figure}
 
-In figure \vref{fig:40d}, all of the combinations which have Voxer $40^{\circ}$ DN40 are compared with each other. When the flow started through the $1^{st}$ Voxer in section A, most of the pressure changes from different combinations result in the similar value around $5$ to $7$ millibars ($mb$). Section A has the $1^{st}$ Voxer before the curve. This show that the behavior of flow after each rotation in the pipeline in section A is the same with each other. Starting from section B, we see the drastic change between $V1$, $V14$ and the rest of Voxer combinations. The pressure changes between in inflow and before section C are truly dramatic from $7\ mb$ to more than $25\ mb$ according to combinations with more than 2 Voxers in the pipeline. When comparing pressure of section A and B between combination $V1$ and $V14$, $V14$ is appeared to have less pressure drop than $V1$. From total pressure drop point of view, $V1$ has the lowest pressure change while $V14$ and the rest of combination meet around $24$ to $27\ mb$. From this graph, it can be seen that 1 Voxer at position $V1$ results in the lowest pressure change which means that the pressure loss was reduced. 
+In figure \vref{fig:40d}, all of the combinations which have Voxer $40^{\circ}$ DN40 are compared with each other. When the flow started through the $1^{st}$ Voxer in section A, most of the pressure changes from different combinations result in the similar value around $5$ to $7$ millibars ($mb$). Section A has the $1^{st}$ Voxer before the curve. This shows that the behavior of flow after each rotation in the pipeline in section A is the same with each other. Starting from section B, we see the drastic change between $V1$, $V14$ and the rest of Voxer combinations. The pressure changes between in inflow and before section C are truly dramatic from $7\ mb$ to more than $25\ mb$ according to combinations with more than 2 Voxers in the pipeline. When comparing pressure of section A and B between combination $V1$ and $V14$, $V14$ is appeared to have less pressure drop than $V1$. From total pressure drop point of view, $V1$ has the lowest pressure change while $V14$ and the rest of combination meet around $24$ to $27\ mb$. From this graph, it can be seen that 1 Voxer at position $V1$ results in the lowest pressure change which means that the pressure loss was reduced. 
 \newpage
 
 \begin{figure}[t]
@@ -127,7 +128,7 @@ Since it is not advised to interfere with the existing pipeline of the cooling s
 
 \subsection{Experiment's design}
 
-From the observation of original pipeline section (see figure \vref{fig:orgpipe}, it is clear that Voxer couldn't be placed inside rubber hoses but inside straight steel circular pipe. This also applied to positions of measuring points to measure inflow before the curve and outflow after the pipe bend. The water flow rate in Keravan Energy is much higher than the one from the pump used in the lab test. So there are chances that water would be leaked from the pipe leading to more energy loss. The fact that Voxer wing should be easy to remove from the pipe between different combinations  is taken into consideration.
+From the observation of original pipeline section (see figure \vref{fig:original_pipe}, it is clear that Voxer couldn't be placed inside rubber hoses but inside straight steel circular pipe. This also applied to positions of measuring points to measure inflow before the curve and outflow after the pipe bend. The water flow rate in Keravan Energy is much higher than the one from the pump used in the lab test. So there are chances that water would be leaked from the pipe leading to more energy loss. The fact that Voxer wing should be easy to remove from the pipe between different combinations  is taken into consideration.
 
 \begin{figure}[h]
   \centering
@@ -193,12 +194,11 @@ At Keravan Energy, the original pipeline section was removed and altered with ou
 
 \subsection{Result and analysis}
 
-From the observations through the pressure meter, the pressure values of each measurement were not stable and varying in a large range. The result from Kervan Energy experiment was not as accurate as the result of lab experiment since the measurement was performed under an uncontrolled condition in such limited amount of time. Therefore each measurement was recorded in separated videos and transcribed into separate \gls{csv} files. In the experiment, $P_{\text{b}}$ and $P_{\text{ab}}$ were recorded. There are 100 points from each measurement transcribed. The flow rate of the system was maintained around $0.8\ l/s$ throughout the whole experiment. There were some minor water leakages around measuring points as well.
-\newpage
+From the observations through the pressure meter, the pressure values of each measurement were not stable and varying in a large range. Apparently with an unfitted framework, the system didn't get really good support so the pipeline resonated axially and radically. The result from Kervan Energy experiment was not as definate as the result of lab experiment since the measurement was performed under an uncontrolled condition in such limited amount of time. Therefore each measurement was recorded in separated videos and transcribed into separate \gls{csv} files. In the experiment, $P_{\text{b}}$ and $P_{\text{ab}}$ were recorded. There are 100 points from each measurement transcribed. The flow rate of the system was maintained around $0.8\ l/s$ throughout the whole experiment. There were some minor water leakages around measuring points as well. All of these factors led to pressure value scattering and a significant uncertainty in the result.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=10cm]{hist_none}
+  \includegraphics[width=9cm]{hist_none}
   \caption{ Histogram of total pressure change values in empty pipeline}
   \label{fig:histnone}
 \end{figure}
@@ -225,7 +225,7 @@ There are some differences in combination Voxer $40^{\circ}$ with empty pipe and
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=9cm]{Pb_plot}
+  \includegraphics[width=9.5cm]{Pb_plot}
   \caption{ Graph of $P_{\text{b}}$ among three combinations throughout time}
   \label{fig:pbplot}
 \end{figure}
@@ -234,7 +234,7 @@ Each point in figure \vref{fig:pbplot} represents pressure value of section B wi
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=9cm]{Pab_plot}
+  \includegraphics[width=9.5cm]{Pab_plot}
   \caption{ Graph of $P_{\text{ab}}$ among three combinations throughout time}
   \label{fig:pabplot}
 \end{figure}
